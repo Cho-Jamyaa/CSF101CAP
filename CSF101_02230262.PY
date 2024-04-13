@@ -17,7 +17,7 @@ def read_input():
     print(f.read())
     f.close()
 
-def reader():
+def pusher():
     return open('input_2_cap1.txt', 'r')
 
 def calculate_score(docs):
@@ -27,8 +27,8 @@ def calculate_score(docs):
         code= line.strip()
         if code in marksboard:
             score+= marksboard[code]
-    print("your totalscore:",score)
+    print("your overall marks:",score)
 
 
 read_input()
-calculate_score(reader()) 
+calculate_score(pusher()) 
